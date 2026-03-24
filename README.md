@@ -1,104 +1,111 @@
 # Hi, I'm XUAN 👋
 
-Master of Universiti Malaya (QS58)  
-Focused on LLMs, Agents, and AI Systems  
+AI Engineer focused on LLM systems, agent architectures, and reliable AI system design.  
+I build end-to-end AI pipelines from model training to deployment, with an emphasis on autonomy, efficiency, and robustness in real-world scenarios.
 
-![8e063d42d7c87aa87bd6237438c6daea](https://github.com/user-attachments/assets/77986c66-b8f3-4429-8016-0b7069f70e3a)
-
----
-
-## About Me
-
-- 🎓 Master student in Artificial Intelligence  
-- 🤖 Building LLM systems from training to deployment  
-- 🧠 Interested in Agent systems, RAG, and model alignment  
-- ⚙️ Exploring how to make AI systems more reliable and autonomous  
+<p align="center">
+  <img src="![8e063d42d7c87aa87bd6237438c6daea](https://github.com/user-attachments/assets/b918af02-525e-4a84-ae3a-d02cc271d439)" width="400"/>
+</p>
 
 ---
 
-## Research & Project Focus
+## 🚀 Selected Projects
 
-### LLM Training & Alignment
-- Full pipeline: Pretraining → SFT → RLHF (PPO / DPO)  
-- DeepSpeed, FlashAttention, mixed precision training  
-- LLaMA-Factory, QLoRA fine-tuning (Qwen / LLaMA)
+### 🤖 Agent Systems
 
-### Agent Systems
-- Plan-and-Execute Agent (LangChain + Ollama + MCP)  
-- Multi-step reasoning, tool use, and re-planning  
-- Self-reflection and execution monitoring  
+#### 🔹 Plan-and-Execute Agent — Local Autonomous AI System  
+A modular LLM agent system designed for multi-step task execution in local environments.  
+Implements planning, execution, and re-planning loops with tool use via MCP (filesystem, shell, websearch, sqlite).  
+Includes tool-call correction (name, arguments, content), watchdog mechanisms, and execution metrics (TCA, ArgFit, StepCR) for improved reliability.
 
-### RAG & Knowledge Systems
-- Multi-Agent RAG with GraphRAG  
-- Retrieval optimization and reasoning pipelines  
-- Production-style evaluation with RAGAS  
-
-### Multimodal AI
-- Medical VQA (Vision + Language)  
-- BLIP / CNN + BERT architectures  
-- Explainability with Grad-CAM  
+🔗 Project link: https://github.com/SAYURIqvq/Plan-and-Execute-Agent
 
 ---
 
-## Selected Projects
+#### 🔹 ReAct + Plan-and-Solve + Self-Reflection Agent  
+A hybrid reasoning agent combining ReAct, structured planning, and self-reflection mechanisms.  
+Designed to improve reasoning consistency and reduce error propagation in multi-step tasks.
 
-### Agent Systems
-- **Plan-and-Execute-Agent**  
-  A modular LLM agent system with planning, tool use, and self-reflection for multi-step task execution  
-
-- **ReAct + Plan-and-Solve + Self-Reflection Agent**  
-  A hybrid reasoning agent combining multiple paradigms  
+🔗 Project link: https://github.com/SAYURIqvq/ReAct_Plan-and-solve_Self-Reflection_Agent
 
 ---
 
-### LLM Training
-- **DeepSpeed RLHF (LLaMA)**  
-  End-to-end RLHF pipeline (SFT → Reward Model → PPO)
+### 🔧 LLM Training & Fine-tuning
 
-- **LLaMA-Factory QLoRA (Qwen3-4B)**  
-  Domain fine-tuning with Chinese medical QA dataset  
+#### 🔹 LLM Training Pipeline — Full Stack Training System  
+A complete LLM training pipeline covering pretraining, supervised fine-tuning (SFT), and alignment (DPO / PPO / GRPO).  
+Built with DeepSpeed, FlashAttention, and mixed precision training (FP8), supporting scalable and efficient model training workflows.
 
----
-
-### RAG Systems
-- **Hierarchical Multi-Agent RAG System**  
-  GraphRAG + self-reflection + adaptive reasoning  
-
-- **RAG QA System (Automotive / General)**  
-  Optimized retrieval + generation pipeline  
+🔗 Project link: https://github.com/SAYURIqvq/LLM-Training-Pipeline
 
 ---
 
-### Multimodal
-- **Medical VQA System**  
-  Vision-language QA with explainability  
+#### 🔹 Qwen3-4B Medical Fine-tuning (QLoRA)  
+Domain-specific fine-tuning of Qwen3-4B using LLaMA-Factory and QLoRA.  
+Trained on Chinese medical QA datasets to enhance domain knowledge and response quality in healthcare scenarios.
+
+🔗 Project link: https://github.com/SAYURIqvq/LLaMA-Factory_Qwen3-4B_QLoRA_QA_Evaluation
 
 ---
 
-## Tech Stack
+### 📚 RAG & Knowledge Systems
 
-```text
-LLM: Qwen / LLaMA / DeepSeek  
-Training: DeepSpeed / QLoRA / LoRA  
-Agent: LangChain / MCP / Ollama  
-RAG: ChromaDB / GraphRAG / BM25  
-Serving: vLLM / FastAPI  
-Evaluation: RAGAS  
-```
+#### 🔹 Hierarchical Multi-Agent RAG System  
+A hierarchical RAG architecture integrating multi-agent coordination, GraphRAG, and self-reflection.  
+Designed to improve retrieval accuracy, reasoning quality, and robustness in knowledge-intensive tasks.
+
+🔗 Project link: https://github.com/SAYURIqvq/Hierarchical-Multi-Agent-RAG-System
 
 ---
 
-## Currently Exploring
+#### 🔹 Automotive RAG QA System  
+A domain-specific RAG system optimized for question answering in automotive knowledge scenarios.  
+Combines retrieval optimization and generation strategies for improved accuracy.
 
-- Advanced Agent architectures  
-- Self-improving AI systems  
-- Efficient LLM training and deployment  
-- Multi-agent collaboration  
+🔗 Project link: https://github.com/SAYURIqvq/RAG-Automotive-QA-System
 
 ---
 
-## 📧 Contact
+### 🧠 Multimodal AI
 
-WeChat: LittileBlackCats  
-Whatsapp: 60178374097
-telegram:@HelloSayuri
+#### 🔹 Medical VQA System  
+A vision-language question answering system for medical image understanding.  
+Built on VQA-RAD dataset using CNN + BERT and BLIP, with Grad-CAM for model interpretability.
+
+🔗 Project link: https://github.com/SAYURIqvq/MED_VQA-main
+
+---
+
+### ⚙️ Systems & Deployment
+
+#### 🔹 Mini LLM Engine  
+A lightweight LLM inference engine built from scratch using PyTorch.  
+Includes continuous batching, paged KV cache, and INT8 quantization, with performance benchmarking against vLLM.
+
+🔗 Project link: https://github.com/SAYURIqvq/Mini-LLM-Engine
+
+---
+
+#### 🔹 vLLM FastAPI Serving (Qwen2-7B)  
+A high-performance LLM serving system using vLLM and FastAPI.  
+Supports streaming inference and efficient deployment of Qwen models.
+
+🔗 Project link: https://github.com/SAYURIqvq/vLLM-FastApi-Qwen2_7B_Instruct
+
+---
+
+## 🧠 Core Interests
+
+- Agentic AI & Autonomous Systems  
+- LLM Training, Fine-tuning & Alignment  
+- RAG Systems & Knowledge-Centric AI  
+- Reliable, Cost-Aware, and Scalable AI Systems  
+- Applied AI for Real-World Deployment  
+
+---
+
+## 📫 Contact
+
+- WeChat: LittileBlackCats  
+- LinkedIn: https://www.linkedin.com/in/xuan-huang-56a712374  
+- WhatsApp: https://wa.me/60178374097  
