@@ -4,7 +4,7 @@ AI Engineer focused on LLM systems, agent architectures, and reliable AI system 
 I build end-to-end AI pipelines from model training to deployment, with an emphasis on autonomy, efficiency, and robustness in real-world scenarios.
 
 <p align="center">
-  <img src="![8e063d42d7c87aa87bd6237438c6daea](https://github.com/user-attachments/assets/b918af02-525e-4a84-ae3a-d02cc271d439)" width="400"/>
+  <img src="https://github.com/user-attachments/assets/b918af02-525e-4a84-ae3a-d02cc271d439" width="400"/>
 </p>
 
 ---
