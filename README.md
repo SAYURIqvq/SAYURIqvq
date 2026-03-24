@@ -1,7 +1,7 @@
 # Hi, I'm XUAN 👋
 
-专注于大语言模型（LLM）、智能体（Agent）架构与可靠 AI 系统设计。  
-致力于构建从模型训练到部署的端到端 AI 系统，关注自主性、效率与稳定性在真实场景中的平衡。
+欢迎来到我的主页喵～ฅ(•̀ω•́)ฅ  
+这里记录着我在 LLM、Agent 和 AI 系统上的探索与实践，希望能带来一些有价值的思路～
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b918af02-525e-4a84-ae3a-d02cc271d439" width="400"/>
