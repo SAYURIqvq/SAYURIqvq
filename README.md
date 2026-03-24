@@ -1,7 +1,7 @@
 # Hi, I'm XUAN 👋
 
-AI Engineer focused on LLM systems, agent architectures, and reliable AI system design.  
-I build end-to-end AI pipelines from model training to deployment, with an emphasis on autonomy, efficiency, and robustness in real-world scenarios.
+专注于大语言模型（LLM）、智能体（Agent）架构与可靠 AI 系统设计。  
+致力于构建从模型训练到部署的端到端 AI 系统，关注自主性、效率与稳定性在真实场景中的平衡。
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b918af02-525e-4a84-ae3a-d02cc271d439" width="400"/>
@@ -9,103 +9,39 @@ I build end-to-end AI pipelines from model training to deployment, with an empha
 
 ---
 
-## 🚀 Selected Projects
+## 项目精选
 
-### 🤖 Agent Systems
+### 智能体系统（Agent Systems）
 
-#### 🔹 Plan-and-Execute Agent — Local Autonomous AI System  
-A modular LLM agent system designed for multi-step task execution in local environments.  
-Implements planning, execution, and re-planning loops with tool use via MCP (filesystem, shell, websearch, sqlite).  
-Includes tool-call correction (name, arguments, content), watchdog mechanisms, and execution metrics (TCA, ArgFit, StepCR) for improved reliability.
+#### Plan-and-Execute Agent —— 本地自主执行系统  
+一个模块化 LLM Agent 系统，支持多步骤任务的规划、执行与重规划。  
+基于 MCP 集成 filesystem、shell、websearch、sqlite 等工具，实现真实环境下的任务执行。  
+引入工具调用修正机制（名称、参数、内容）以及 Watchdog 与执行指标（TCA、ArgFit、StepCR），提升系统稳定性与可靠性。
 
-🔗 Project link: https://github.com/SAYURIqvq/Plan-and-Execute-Agent
-
----
-
-#### 🔹 ReAct + Plan-and-Solve + Self-Reflection Agent  
-A hybrid reasoning agent combining ReAct, structured planning, and self-reflection mechanisms.  
-Designed to improve reasoning consistency and reduce error propagation in multi-step tasks.
-
-🔗 Project link: https://github.com/SAYURIqvq/ReAct_Plan-and-solve_Self-Reflection_Agent
+🔗 项目链接：https://github.com/SAYURIqvq/Plan-and-Execute-Agent
 
 ---
 
-### 🔧 LLM Training & Fine-tuning
+#### ReAct + Plan-and-Solve + Self-Reflection Agent  
+融合 ReAct 推理、结构化规划与自反思机制的混合智能体系统。  
+用于提升多步骤推理任务中的一致性，并降低错误累积问题。
 
-#### 🔹 LLM Training Pipeline — Full Stack Training System  
-A complete LLM training pipeline covering pretraining, supervised fine-tuning (SFT), and alignment (DPO / PPO / GRPO).  
-Built with DeepSpeed, FlashAttention, and mixed precision training (FP8), supporting scalable and efficient model training workflows.
-
-🔗 Project link: https://github.com/SAYURIqvq/LLM-Training-Pipeline
+🔗 项目链接：https://github.com/SAYURIqvq/ReAct_Plan-and-solve_Self-Reflection_Agent
 
 ---
 
-#### 🔹 Qwen3-4B Medical Fine-tuning (QLoRA)  
-Domain-specific fine-tuning of Qwen3-4B using LLaMA-Factory and QLoRA.  
-Trained on Chinese medical QA datasets to enhance domain knowledge and response quality in healthcare scenarios.
+### 模型训练与微调（LLM Training & Fine-tuning）
 
-🔗 Project link: https://github.com/SAYURIqvq/LLaMA-Factory_Qwen3-4B_QLoRA_QA_Evaluation
+#### LLM Training Pipeline —— 完整训练系统  
+覆盖预训练、监督微调（SFT）与对齐（DPO / PPO / GRPO）的完整 LLM 训练流程。  
+基于 DeepSpeed、FlashAttention 与混合精度（FP8）构建，支持高效可扩展训练。
 
----
-
-### 📚 RAG & Knowledge Systems
-
-#### 🔹 Hierarchical Multi-Agent RAG System  
-A hierarchical RAG architecture integrating multi-agent coordination, GraphRAG, and self-reflection.  
-Designed to improve retrieval accuracy, reasoning quality, and robustness in knowledge-intensive tasks.
-
-🔗 Project link: https://github.com/SAYURIqvq/Hierarchical-Multi-Agent-RAG-System
+🔗 项目链接：https://github.com/SAYURIqvq/LLM-Training-Pipeline
 
 ---
 
-#### 🔹 Automotive RAG QA System  
-A domain-specific RAG system optimized for question answering in automotive knowledge scenarios.  
-Combines retrieval optimization and generation strategies for improved accuracy.
+#### Qwen3-4B 医疗领域微调（QLoRA）  
+基于 LLaMA-Factory 与 QLoRA 对 Qwen3-4B 进行领域微调。  
+使用中文医疗问答数据集，提升模型在医疗场景下的知识理解与回答质量。
 
-🔗 Project link: https://github.com/SAYURIqvq/RAG-Automotive-QA-System
-
----
-
-### 🧠 Multimodal AI
-
-#### 🔹 Medical VQA System  
-A vision-language question answering system for medical image understanding.  
-Built on VQA-RAD dataset using CNN + BERT and BLIP, with Grad-CAM for model interpretability.
-
-🔗 Project link: https://github.com/SAYURIqvq/MED_VQA-main
-
----
-
-### ⚙️ Systems & Deployment
-
-#### 🔹 Mini LLM Engine  
-A lightweight LLM inference engine built from scratch using PyTorch.  
-Includes continuous batching, paged KV cache, and INT8 quantization, with performance benchmarking against vLLM.
-
-🔗 Project link: https://github.com/SAYURIqvq/Mini-LLM-Engine
-
----
-
-#### 🔹 vLLM FastAPI Serving (Qwen2-7B)  
-A high-performance LLM serving system using vLLM and FastAPI.  
-Supports streaming inference and efficient deployment of Qwen models.
-
-🔗 Project link: https://github.com/SAYURIqvq/vLLM-FastApi-Qwen2_7B_Instruct
-
----
-
-## 🧠 Core Interests
-
-- Agentic AI & Autonomous Systems  
-- LLM Training, Fine-tuning & Alignment  
-- RAG Systems & Knowledge-Centric AI  
-- Reliable, Cost-Aware, and Scalable AI Systems  
-- Applied AI for Real-World Deployment  
-
----
-
-## 📫 Contact
-
-- WeChat: LittileBlackCats  
-- LinkedIn: https://www.linkedin.com/in/xuan-huang-56a712374  
-- WhatsApp: https://wa.me/60178374097  
+🔗 项目链接：https://github.com/SAYURIqvq/LLaMA-Factory_Qwen3-4B_QLoRA_QA_Evaluation
