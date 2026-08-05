@@ -118,9 +118,7 @@
 
 ## 📫 联系方式
 
-- WeChat：LittileBlackCats  
-- LinkedIn：https://www.linkedin.com/in/xuan-huang-56a712374  
-- WhatsApp：https://wa.me/60178374097  
+- WeChat：LittileBlackCats  - WhatsApp：https://wa.me/60178374097  
 
 ---
 
