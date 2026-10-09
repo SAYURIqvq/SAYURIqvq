@@ -117,8 +117,7 @@
 ---
 
 ## 📫 联系方式
-
-- WeChat：LittileBlackCats  - WhatsApp：https://wa.me/60178374097  
+- WhatsApp：https://wa.me/60178374097  
 
 ---
 
