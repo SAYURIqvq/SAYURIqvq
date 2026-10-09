@@ -1,54 +1,110 @@
 # Hi, I'm XUAN 👋
 
-欢迎来到我的主页喵～ฅ(•̀ω•́)ฅ  
+欢迎来到我的主页喵～ฅ(•̀ω•́)ฅ<br>
 这里记录着我在 LLM、Agent 和 AI 系统上的探索与实践，希望能带来一些有价值的思路～
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b918af02-525e-4a84-ae3a-d02cc271d439" width="400"/>
+  <img src="https://github.com/user-attachments/assets/b918af02-525e-4a84-ae3a-d02cc271d439" alt="XUAN 的主页插画" width="400"/>
 </p>
+
+喜欢研究模型怎么学习、Agent 怎么做事，也喜欢把一个个小想法慢慢变成能运行的项目。<br>
+下面挑了几只比较有代表性的“小作品”，欢迎点进去逛逛吖～🐾
 
 ---
 
-## 项目精选
+## 🌷 先来看看这些小作品吧
 
-围绕任务执行、知识检索和推理服务，我重点维护以下三个项目。具体实现、运行方式与验证边界见各仓库。
+### 🐱 Plan-and-Execute Agent · 会规划，也会动手的小助手
 
-| 项目 | 主要实现 | 当前关注点 |
-|---|---|---|
-| [Plan-and-Execute Agent](https://github.com/SAYURIqvq/Plan-and-Execute-Agent) | 本地任务规划、MCP 工具调用、失败恢复与重规划 | 工具调用修正、执行监控、可复现测试 |
-| [Hierarchical Multi-Agent RAG](https://github.com/SAYURIqvq/Hierarchical-Multi-Agent-RAG-System) | 分层检索、多 Agent 编排、图检索与自反思 | 统一评测指标、引用证据与失败案例 |
-| [Mini LLM Engine](https://github.com/SAYURIqvq/Mini-LLM-Engine) | 逐 token 解码、动态请求调度、每请求 KV 缓存、top-p 采样 | 服务可靠性与后续 batched decode |
+想让本地模型学会把任务拆开、调用工具，再根据结果调整下一步，于是就有了这个项目喵～
 
-Mini LLM Engine 当前逐请求执行前向计算；paged KV cache 与 INT8 量化属于后续方向。RAG 的小样本评测不代表零幻觉保证，各项目效果以明确范围内的实验记录为准。
+基于 **LangChain + Ollama + MCP**，实现任务规划、工具调用、失败恢复与重规划；还加入了工具名称与参数修正、Watchdog 和执行指标记录。一起看看小模型是怎么一步步完成任务的吧 ฅ(•̀ω•́)ฅ
 
-## 更多探索
+🔗 [去看看 Plan-and-Execute Agent](https://github.com/SAYURIqvq/Plan-and-Execute-Agent)
 
-- [LLM Training Pipeline](https://github.com/SAYURIqvq/LLM-Training-Pipeline)：预训练、SFT、对齐与多模态训练代码；不同硬件和训练路径需要分别验证。
-- [Qwen3-4B 医疗问答 QLoRA](https://github.com/SAYURIqvq/LLaMA-Factory_Qwen3-4B_QLoRA_QA_Evaluation)：基于 LLaMA-Factory 的领域微调与答案评估实验。
-- [ReAct + Plan-and-Solve + Self-Reflection](https://github.com/SAYURIqvq/ReAct_Plan-and-solve_Self-Reflection_Agent)：混合智能体执行方式探索。
-- [Automotive RAG QA](https://github.com/SAYURIqvq/RAG-Automotive-QA-System)：汽车知识领域问答。
-- [Medical VQA](https://github.com/SAYURIqvq/MED_VQA-main)：医疗影像视觉问答与可解释性实验。
-- [vLLM FastAPI Serving](https://github.com/SAYURIqvq/vLLM-FastApi-Qwen2_7B_Instruct)：Qwen2-7B 推理服务部署。
+---
+
+### 📚 Hierarchical Multi-Agent RAG · 会翻资料的知识小队
+
+遇到复杂问题时，让负责规划、检索、生成和检查的 Agent 分工合作，一起从资料里寻找答案～
+
+项目结合 **分层切块、向量检索、BM25、图检索与自反思流程**，探索如何组织检索证据、生成带引用的回答。很喜欢这种一边查资料、一边检查自己有没有答偏的小队协作感喵 📖
+
+🔗 [去看看 Hierarchical Multi-Agent RAG](https://github.com/SAYURIqvq/Hierarchical-Multi-Agent-RAG-System)
+
+---
+
+### 🐶 Qwen3-4B 医疗问答微调 · 给小模型补一补专业课
+
+一次围绕中文医疗问答的领域微调实验，记录小模型学习专业知识的过程～
+
+使用 **LLaMA-Factory + QLoRA** 微调 Qwen3-4B，围绕 Huatuo26M-Lite 数据集整理数据准备、训练、推理和答案评估流程。除了观察模型学到了什么，也想认真看看它在哪些问题上还会犯迷糊吖～🔎
+
+🔗 [去看看 Qwen3-4B QLoRA 微调与评估](https://github.com/SAYURIqvq/LLaMA-Factory_Qwen3-4B_QLoRA_QA_Evaluation)
+
+---
+
+### 🧪 LLM Training Pipeline · 模型成长的小实验室
+
+对模型从“开始学习”到“学会按要求回答”的过程很好奇，所以把不同训练阶段放进了同一个实验项目里喵～
+
+整理了 **预训练、SFT、DPO / PPO / GRPO 与多模态训练**的代码，也探索 DeepSpeed、FlashAttention 和混合精度等训练技术。希望沿着数据、模型和优化过程，把训练这件事一点点弄明白 (ง •̀_•́)ง
+
+🔗 [去看看 LLM Training Pipeline](https://github.com/SAYURIqvq/LLM-Training-Pipeline)
+
+---
+
+### ☕ LangChain4j Agent · Java 世界里的 AI 小伙伴
+
+也想把 Agent 接进熟悉的后端服务里，让知识问答、会话记忆和工具调用一起工作～
+
+基于 **Java + Spring Boot + LangChain4j**，整合 RAG、MCP 工具、Redis 会话记忆和流式对话，探索从模型能力到应用服务的连接方式。喜欢 Java 和 AI 应用的小伙伴，可以来这里坐坐吖 ☕
+
+🔗 [去看看 LangChain4j Agent](https://github.com/SAYURIqvq/LangChain4j-Agent)
+
+---
+
+### ⚙️ Mini LLM Engine · 拆开推理过程看看里面
+
+模型是怎么一个 token、一个 token 地把回答写出来的呢？这个项目就是我的推理引擎拆解笔记喵～
+
+使用 **Python + PyTorch** 实现逐 token 解码、请求队列调度、每请求 KV 缓存和 top-p 采样，并提供 FastAPI 接口。跟着代码看看 prefill、decode 和请求状态如何配合，把推理过程里的小齿轮一个个认清楚 ⚙️
+
+🔗 [去看看 Mini LLM Engine](https://github.com/SAYURIqvq/Mini-LLM-Engine)
+
+---
+
+## 🌱 还有一个小小实验角
+
+最近也在琢磨：Agent 做长任务时，换了上下文窗口，要怎么记得自己做到哪一步了呢？
+
+[**agent-state-cutover**](https://github.com/SAYURIqvq/agent-state-cutover) 是围绕这个问题的轻量原型，用 **State、Note、Archive 和 Checkpoint** 保存任务状态、工作笔记与原始记录，再通过状态补丁校验来更新事实。希望小助手换了工作台，也能接着把事情做好呀～🐾
+
+更多探索还放在 [我的仓库列表](https://github.com/SAYURIqvq?tab=repositories) 里，欢迎慢慢翻一翻～
 
 ---
 
 ## 🐾 一点点兴趣方向
 
-- Agent 系统与多智能体协作喵  
-- LLM 训练、微调与对齐  
-- RAG 与知识驱动 AI  
-- 更可靠、更稳定的 AI 系统设计  
-- 面向真实世界约束的工程实践  
+- 🐱 Agent 系统、多智能体协作与长程任务记忆
+- 🧪 LLM 训练、微调与对齐
+- 📚 RAG、知识检索与回答质量评估
+- ⚙️ 推理引擎、模型服务与工程实践
+- 🌱 让 AI 系统一点点变得更可靠、更好用
 
 ---
 
-## 📫 联系方式
+## 📫 来找我玩呀
 
-- WeChat：LittileBlackCats  - WhatsApp：https://wa.me/60178374097  
+- WeChat：LittileBlackCats
+- WhatsApp：[点这里来打个招呼～](https://wa.me/60178374097)
+
+欢迎交流项目、讨论想法，也欢迎指出代码里还可以改进的地方喵～
 
 ---
 
 ## 🌙 小小的想法
 
-> 希望能做出既聪明又可靠的 AI 系统喵 (ฅ´ω`ฅ)
-> 希望可以和你们成为很好的技术上的朋友吖！！！！！
+> 希望能做出既聪明又可靠的 AI 系统喵 (ฅ´ω`ฅ)<br>
+> 一边学习，一边动手，把好奇心慢慢变成能运行的小作品。<br>
+> 希望可以和你们成为很好的技术上的朋友吖！！！！
