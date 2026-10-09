@@ -12,7 +12,7 @@
 
 ---
 
-## 🌷 先来看看这些小作品吧
+##  项目精选
 
 ### Plan-and-Execute-Agent
 
@@ -96,7 +96,6 @@
 
 ## 📫 来找我玩呀
 
-- WeChat：LittileBlackCats
 - WhatsApp：[点这里来打个招呼～](https://wa.me/60178374097)
 
 欢迎交流项目、讨论想法，也欢迎指出代码里还可以改进的地方喵～
