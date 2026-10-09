@@ -14,63 +14,63 @@
 
 ## 🌷 先来看看这些小作品吧
 
-### 🐱 Plan-and-Execute Agent · 会规划，也会动手的小助手
+### Plan-and-Execute-Agent
 
 想让本地模型学会把任务拆开、调用工具，再根据结果调整下一步，于是就有了这个项目喵～
 
 基于 **LangChain + Ollama + MCP**，实现任务规划、工具调用、失败恢复与重规划；还加入了工具名称与参数修正、Watchdog 和执行指标记录。一起看看小模型是怎么一步步完成任务的吧 ฅ(•̀ω•́)ฅ
 
-🔗 [去看看 Plan-and-Execute Agent](https://github.com/SAYURIqvq/Plan-and-Execute-Agent)
+🔗 [Plan-and-Execute-Agent](https://github.com/SAYURIqvq/Plan-and-Execute-Agent)
 
 ---
 
-### 📚 Hierarchical Multi-Agent RAG · 会翻资料的知识小队
+### Hierarchical-Multi-Agent-RAG-System
 
 遇到复杂问题时，让负责规划、检索、生成和检查的 Agent 分工合作，一起从资料里寻找答案～
 
 项目结合 **分层切块、向量检索、BM25、图检索与自反思流程**，探索如何组织检索证据、生成带引用的回答。很喜欢这种一边查资料、一边检查自己有没有答偏的小队协作感喵 📖
 
-🔗 [去看看 Hierarchical Multi-Agent RAG](https://github.com/SAYURIqvq/Hierarchical-Multi-Agent-RAG-System)
+🔗 [Hierarchical-Multi-Agent-RAG-System](https://github.com/SAYURIqvq/Hierarchical-Multi-Agent-RAG-System)
 
 ---
 
-### 🐶 Qwen3-4B 医疗问答微调 · 给小模型补一补专业课
+### LLaMA-Factory_Qwen3-4B_QLoRA_QA_Evaluation
 
 一次围绕中文医疗问答的领域微调实验，记录小模型学习专业知识的过程～
 
 使用 **LLaMA-Factory + QLoRA** 微调 Qwen3-4B，围绕 Huatuo26M-Lite 数据集整理数据准备、训练、推理和答案评估流程。除了观察模型学到了什么，也想认真看看它在哪些问题上还会犯迷糊吖～🔎
 
-🔗 [去看看 Qwen3-4B QLoRA 微调与评估](https://github.com/SAYURIqvq/LLaMA-Factory_Qwen3-4B_QLoRA_QA_Evaluation)
+🔗 [LLaMA-Factory_Qwen3-4B_QLoRA_QA_Evaluation](https://github.com/SAYURIqvq/LLaMA-Factory_Qwen3-4B_QLoRA_QA_Evaluation)
 
 ---
 
-### 🧪 LLM Training Pipeline · 模型成长的小实验室
+### LLM-Training-Pipeline
 
 对模型从“开始学习”到“学会按要求回答”的过程很好奇，所以把不同训练阶段放进了同一个实验项目里喵～
 
 整理了 **预训练、SFT、DPO / PPO / GRPO 与多模态训练**的代码，也探索 DeepSpeed、FlashAttention 和混合精度等训练技术。希望沿着数据、模型和优化过程，把训练这件事一点点弄明白 (ง •̀_•́)ง
 
-🔗 [去看看 LLM Training Pipeline](https://github.com/SAYURIqvq/LLM-Training-Pipeline)
+🔗 [LLM-Training-Pipeline](https://github.com/SAYURIqvq/LLM-Training-Pipeline)
 
 ---
 
-### ☕ LangChain4j Agent · Java 世界里的 AI 小伙伴
+### LangChain4j-Agent
 
 也想把 Agent 接进熟悉的后端服务里，让知识问答、会话记忆和工具调用一起工作～
 
 基于 **Java + Spring Boot + LangChain4j**，整合 RAG、MCP 工具、Redis 会话记忆和流式对话，探索从模型能力到应用服务的连接方式。喜欢 Java 和 AI 应用的小伙伴，可以来这里坐坐吖 ☕
 
-🔗 [去看看 LangChain4j Agent](https://github.com/SAYURIqvq/LangChain4j-Agent)
+🔗 [LangChain4j-Agent](https://github.com/SAYURIqvq/LangChain4j-Agent)
 
 ---
 
-### ⚙️ Mini LLM Engine · 拆开推理过程看看里面
+### Mini-LLM-Engine
 
 模型是怎么一个 token、一个 token 地把回答写出来的呢？这个项目就是我的推理引擎拆解笔记喵～
 
 使用 **Python + PyTorch** 实现逐 token 解码、请求队列调度、每请求 KV 缓存和 top-p 采样，并提供 FastAPI 接口。跟着代码看看 prefill、decode 和请求状态如何配合，把推理过程里的小齿轮一个个认清楚 ⚙️
 
-🔗 [去看看 Mini LLM Engine](https://github.com/SAYURIqvq/Mini-LLM-Engine)
+🔗 [Mini-LLM-Engine](https://github.com/SAYURIqvq/Mini-LLM-Engine)
 
 ---
 
